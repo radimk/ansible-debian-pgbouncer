@@ -242,6 +242,8 @@ dns_max_ttl = {{ pgbouncer_dns_max_ttl }}
 ;dns_zone_check_period = 0
 dns_zone_check_period = {{ pgbouncer_dns_zone_check_period }}
 
+max_prepared_statements = {{ pgbouncer_max_prepared_statements }}
+
 {% if pgbouncer_users_aliases is defined %}
 [users]
 {% for item in pgbouncer_users_aliases %}
